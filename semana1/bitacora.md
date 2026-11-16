@@ -110,3 +110,35 @@ Símbolos identificados:
 - **Entrada**: paralelogramos (lectura de nombreRecorrido, precioPorPersona, cantidadPersonas).
 - **Proceso**: rectángulos (cálculo de valorTotal, valorAnticipo, saldoPendiente).
 - **Salida**: paralelogramos (mostrar los cuatro valores).
+
+## MiniReto 4 · Asistente de taquilla v0.1: la cuenta del grupo
+
+### Archivo creado
+`semana1/algoritmos/03_cuenta_grupo.js`
+
+### Descomposición del problema
+
+1. `valorAlquiler = cantidadBicicletas * horasAlquiler * PRECIO_HORA_URBANA`
+2. `valorRecorrido = precioRecorridoPorPersona * cantidadPersonas`
+3. `subtotal = valorAlquiler + valorRecorrido`
+4. `aporteVoluntario = subtotal * 0.10`
+5. `total = subtotal + aporteVoluntario`
+6. `valorPorPersona = total / cantidadPersonas`
+7. `valorPorPersonaRedondeado = Math.ceil(valorPorPersona / 100) * 100`
+
+### Fórmula de redondeo hacia arriba a la centena
+
+`Math.ceil(valorPorPersona / 100) * 100`
+
+Dividimos entre 100, redondeamos hacia arriba con `Math.ceil` y multiplicamos por 100 para volver a la escala original. Ejemplo: `33334 / 100 = 333.34` → `334` → `33400`.
+
+### Casos de prueba
+
+| Caso | Bicis | Horas | Precio recorrido | Personas | Total | Por persona (redondeado) |
+|---|---|---|---|---|---|---|
+| 3 personas, 3 bicis × 2 h, Río y Parques | 3 | 2 | 45000 | 3 | $214.500 | $71.500 |
+| 4 personas, 3 bicis × 3 h, Sabores de Barrio | 3 | 3 | 60000 | 4 | $363.000 | $90.800 |
+| Caso propio: 2 personas, 2 bicis × 1 h, Reto Las Palmas | 2 | 1 | 85000 | 2 | $209.000 | $104.500 |
+
+Los tres casos coinciden con el cálculo manual y con la ejecución del programa.
+
