@@ -84,3 +84,29 @@
 
 Si la persona de taquilla ingresa `0` o un número negativo, el algoritmo actual calcula `totalPagar = 0` o un valor negativo, y lo muestra sin advertir el error. Esto se resolverá en la Semana 2 con estructuras de decisión (`if`), validando que `horasAlquiler > 0` antes de calcular.
 
+## MiniReto 3 · Recorridos guiados: del pseudocódigo al diagrama de flujo
+
+### Archivo creado
+`semana1/algoritmos/02_cotizacion_recorrido.js`
+
+### Prueba de escritorio (4 personas, Sabores de Barrio)
+
+| Paso / Instrucción | nombreRecorrido | precioPorPersona | cantidadPersonas | valorTotal | valorAnticipo | saldoPendiente |
+|---|---|---|---|---|---|---|
+| Inicio | — | — | — | — | — | — |
+| Leer nombreRecorrido | Sabores de Barrio | — | — | — | — | — |
+| Leer precioPorPersona | Sabores de Barrio | 60000 | — | — | — | — |
+| Leer cantidadPersonas | Sabores de Barrio | 60000 | 4 | — | — | — |
+| valorTotal = 60000 * 4 | Sabores de Barrio | 60000 | 4 | 240000 | — | — |
+| valorAnticipo = redondear(240000 * 0.30) | Sabores de Barrio | 60000 | 4 | 240000 | 72000 | — |
+| saldoPendiente = 240000 - 72000 | Sabores de Barrio | 60000 | 4 | 240000 | 72000 | 168000 |
+
+### Diagrama de flujo
+
+El diagrama se encuentra en `semana1/diagramas/02_cotizacion_recorrido.md` (Mermaid).
+
+Símbolos identificados:
+- **Inicio y Fin**: óvalos.
+- **Entrada**: paralelogramos (lectura de nombreRecorrido, precioPorPersona, cantidadPersonas).
+- **Proceso**: rectángulos (cálculo de valorTotal, valorAnticipo, saldoPendiente).
+- **Salida**: paralelogramos (mostrar los cuatro valores).
