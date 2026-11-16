@@ -57,3 +57,30 @@
 - **Patrón**: con cada cliente se repite la misma secuencia: documento → solicitud → disponibilidad → revisión → cobro → entrega → salida.
 - **Abstracción**: dejé por fuera detalles como el color de la bicicleta, el nombre del empleado, la forma exacta de pago (efectivo/tarjeta) o el modelo del candado, porque no afectan la lógica del alquiler.
 - **Algoritmo final**: la versión corregida de 16 pasos que aparece arriba, con decisiones claras y un inicio y fin definidos.
+
+## MiniReto 2 · La primera cotización en JavaScript
+
+### Archivo creado
+`semana1/algoritmos/01_cotizacion_basica.js`
+
+### Tabla Entrada – Proceso – Salida
+
+| Entrada | Tipo | Proceso | Salida |
+|---|---|---|---|
+| `nombreCliente` | String (Caracter) | — | Se usa en el mensaje final |
+| `horasAlquiler` | Number entero (Entero) | `totalPagar = horasAlquiler * PRECIO_POR_HORA` | — |
+| `PRECIO_POR_HORA` | Constante Number (Real) = 10000 | Se usa en la fórmula | — |
+| `totalPagar` | Number (Real) | Resultado del cálculo | `"Hola, [nombre]: tu alquiler de [horas] horas cuesta $[total]"` |
+
+### Casos de prueba
+
+| Caso | Entrada | Resultado esperado (a mano) | Resultado obtenido |
+|---|---|---|---|
+| 1 hora | Nombre: Ana, Horas: 1 | $10000 | $10000 |
+| 3 horas | Nombre: Ana, Horas: 3 | $30000 | $30000 |
+| 8 horas | Nombre: Ana, Horas: 8 | $80000 | $80000 |
+
+### Caso borde pendiente para Semana 2
+
+Si la persona de taquilla ingresa `0` o un número negativo, el algoritmo actual calcula `totalPagar = 0` o un valor negativo, y lo muestra sin advertir el error. Esto se resolverá en la Semana 2 con estructuras de decisión (`if`), validando que `horasAlquiler > 0` antes de calcular.
+
