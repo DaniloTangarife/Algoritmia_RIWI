@@ -30,3 +30,43 @@
   2. Evalúa `0 < 0` (Falso) || `0 > 120` (Falso).
   3. Falso || Falso = Falso.
   4. Entra al `else` → Muestra "Edad válida".
+
+  ## Pruebas de Decisión y de Escritorio — El Parqueadero
+
+**03_parqueadero.js**
+### Resultados de los 9 Casos Borde (Pruebas de Decisión)
+1. Carro, 15 min, No → Salida: `$0` (OK)
+2. Carro, 16 min, No → Salida: `$4000` (OK)
+3. Carro, 60 min, No → Salida: `$4000` (OK)
+4. Carro, 61 min, No → Salida: `$8000` (OK)
+5. Moto, 61 min, Sí → Salida: `$2000` (OK)
+6. Carro, 600 min, No → Salida: `$30000` (OK)
+7. Carro, 600 min, Sí → Salida: `$15000` (OK)
+8. Tipo 3, 30 min, No → Salida: `Tipo de vehículo no válido` (OK)
+9. Carro, -5 min, No → Salida: `Los minutos no pueden ser negativos` (OK)
+
+### Pruebas de Escritorio
+
+**Caso 4 (Carro, 61 minutos, No tiene factura):**
+1. `tipo = 1`, `minutos = 61`, `factura = "N"`.
+2. `minutos < 0` → Falso.
+3. `tipo === 1` → Verdadero. `tarifa = 4000`.
+4. `tarifa === 0` → Falso.
+5. `minutos <= 15` → Falso (61 no es <= 15).
+6. `horas = Math.trunc((61 + 59) / 60)` = `Math.trunc(120 / 60)` = `2`.
+7. `valor = 2 * 4000 = 8000`.
+8. `valor > 30000` → Falso.
+9. `factura === "S"` → Falso.
+10. Imprime: `Valor a pagar: $8000`.
+
+**Caso 5 (Moto, 61 minutos, Sí tiene factura):**
+1. `tipo = 2`, `minutos = 61`, `factura = "S"`.
+2. `minutos < 0` → Falso.
+3. `tipo === 2` → Verdadero. `tarifa = 2000`.
+4. `tarifa === 0` → Falso.
+5. `minutos <= 15` → Falso.
+6. `horas = Math.trunc((61 + 59) / 60)` = `2`.
+7. `valor = 2 * 2000 = 4000`.
+8. `valor > 30000` → Falso.
+9. `factura === "S"` → Verdadero. `valor = 4000 / 2 = 2000`.
+10. Imprime: `Valor a pagar: $2000`.
