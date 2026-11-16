@@ -70,3 +70,51 @@
 8. `valor > 30000` → Falso.
 9. `factura === "S"` → Verdadero. `valor = 4000 / 2 = 2000`.
 10. Imprime: `Valor a pagar: $2000`.
+
+### Tabla de Decisión — Semáforo
+
+| Condición | Resultado |
+| :--- | :--- |
+| `unidades < 0` | Error |
+| `unidades = 0` | Rojo: agotado |
+| `unidades` de 1 a 10 | Amarillo: pedir |
+| `unidades > 10` | Verde: todo bien |
+
+### Pruebas de Decisión y de Escritorio — Semáforo
+
+- **Prueba de Decisión (Error):** Entrada: `unidades = -5` → Salida: `Error: cantidad inválida`.
+- **Prueba de Decisión (Rojo):** Entrada: `unidades = 0` → Salida: `Rojo: agotado`.
+- **Prueba de Decisión (Amarillo):** Entrada: `unidades = 5` → Salida: `Amarillo: pedir`.
+- **Prueba de Decisión (Verde):** Entrada: `unidades = 15` → Salida: `Verde: todo bien`.
+
+- **Prueba de Escritorio (Caso Amarillo, 5 unidades):**
+  1. `unidades = 5`.
+  2. Evalúa `5 < 0` → Falso.
+  3. Evalúa `5 === 0` → Falso.
+  4. Evalúa `5 >= 1 && 5 <= 10` → Verdadero.
+  5. Entra al bloque y muestra `Amarillo: pedir`.
+
+### Pruebas de Decisión y de Escritorio — Bisiesto
+
+- **Prueba de Decisión (Bisiesto normal):** Entrada: `anio = 2024` → Salida: `2024 es bisiesto`.
+- **Prueba de Decisión (No bisiesto por 100):** Entrada: `anio = 1900` → Salida: `1900 no es bisiesto`.
+- **Prueba de Decisión (Bisiesto por 400):** Entrada: `anio = 2000` → Salida: `2000 es bisiesto`.
+- **Prueba de Decisión (No bisiesto normal):** Entrada: `anio = 2026` → Salida: `2026 no es bisiesto`.
+
+- **Prueba de Escritorio (Caso 1900):**
+  1. `anio = 1900`.
+  2. Evalúa `1900 % 4 === 0` → Verdadero.
+  3. Evalúa `1900 % 100 !== 0` → Falso.
+  4. Primera parte de la condición: `Verdadero && Falso` → Falso.
+  5. Evalúa `1900 % 400 === 0` → Falso.
+  6. Condición final: `Falso || Falso` → Falso.
+  7. Entra al `else` e imprime `1900 no es bisiesto`.
+
+- **Prueba de Escritorio (Caso 2000):**
+  1. `anio = 2000`.
+  2. Evalúa `2000 % 4 === 0` → Verdadero.
+  3. Evalúa `2000 % 100 !== 0` → Falso (2000 sí es divisible entre 100).
+  4. Primera parte de la condición: `Verdadero && Falso` → Falso.
+  5. Evalúa `2000 % 400 === 0` → Verdadero.
+  6. Condición final: `Falso || Verdadero` → Verdadero.
+  7. Entra al `if` e imprime `2000 es bisiesto`.
