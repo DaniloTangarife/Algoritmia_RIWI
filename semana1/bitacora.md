@@ -174,3 +174,19 @@ Entrada: `20` → Salida: `Has vivido aproximadamente 7300 días.`
 
 Entrada: `cuenta = 120000`, `porcentajePropina = 10`, `cantidadPersonas = 4` → Salida: `Propina: $12000`, `Total a pagar: $132000`, `Cada uno paga: $33000`.
 
+## Reto de video 3 · Promedio de notas
+
+### Archivo creado
+`semana1/video/03_promedio_notas.js`
+
+### Entrada – Proceso – Salida
+
+| Entrada | Tipo | Proceso | Salida |
+|---|---|---|---|
+| `nota1` | Number (Real) | `promedio = (nota1 + nota2 + nota3) / 3` | `"El promedio de las 3 notas es: [promedio]"` |
+| `nota2` | Number (Real) | — | — |
+| `nota3` | Number (Real) | — | — |
+
+### Ejemplo
+
+Entrada: `nota1 = 4.5`, `nota2 = 3.8`, `nota3 = 2.9` → Salida: `El promedio de las 3 notas es: 3.73`.
