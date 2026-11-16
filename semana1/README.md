@@ -26,6 +26,7 @@ Esta carpeta contiene los algoritmos secuenciales en JavaScript que conforman la
 3. Ejecutar cualquiera de los archivos con el comando `node`. Por ejemplo:
 
 # Algoritmos del proyecto
+```bash
 node semana1/algoritmos/01_cotizacion_basica.js
 node semana1/algoritmos/02_cotizacion_recorrido.js
 node semana1/algoritmos/03_cuenta_grupo.js
@@ -34,6 +35,7 @@ node semana1/algoritmos/03_cuenta_grupo.js
 node semana1/video/01_edad_en_dias.js
 node semana1/video/02_calculadora_propinas.js
 node semana1/video/03_promedio_notas.js
+```
 
 ## Pruebas de Ejecución
 
