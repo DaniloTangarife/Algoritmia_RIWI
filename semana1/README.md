@@ -25,7 +25,6 @@ Esta carpeta contiene los algoritmos secuenciales en JavaScript que conforman la
 2. Abrir una terminal en la raíz del repositorio.
 3. Ejecutar cualquiera de los archivos con el comando `node`. Por ejemplo:
 
-```bash
 # Algoritmos del proyecto
 node semana1/algoritmos/01_cotizacion_basica.js
 node semana1/algoritmos/02_cotizacion_recorrido.js
