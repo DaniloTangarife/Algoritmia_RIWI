@@ -142,3 +142,18 @@ Dividimos entre 100, redondeamos hacia arriba con `Math.ceil` y multiplicamos po
 
 Los tres casos coinciden con el cálculo manual y con la ejecución del programa.
 
+## Reto de video 1 · EdadEnDias
+
+### Archivo creado
+`semana1/video/01_edad_en_dias.js`
+
+### Entrada – Proceso – Salida
+
+| Entrada | Tipo | Proceso | Salida |
+|---|---|---|---|
+| `edadAnios` | Number entero | `diasVividos = edadAnios * 365` | `"Has vivido aproximadamente [diasVividos] días."` |
+
+### Ejemplo
+
+Entrada: `20` → Salida: `Has vivido aproximadamente 7300 días.`
+
