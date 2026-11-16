@@ -157,3 +157,20 @@ Los tres casos coinciden con el cálculo manual y con la ejecución del programa
 
 Entrada: `20` → Salida: `Has vivido aproximadamente 7300 días.`
 
+## Reto de video 2 · Calculadora de propinas
+
+### Archivo creado
+`semana1/video/02_calculadora_propinas.js`
+
+### Entrada – Proceso – Salida
+
+| Entrada | Tipo | Proceso | Salida |
+|---|---|---|---|
+| `cuenta` | Number (Real) | `propina = cuenta * porcentajePropina / 100` | `"Propina: $[propina]"` |
+| `porcentajePropina` | Number (Real) | `total = cuenta + propina` | `"Total a pagar: $[total]"` |
+| `cantidadPersonas` | Number entero | `cadaUnoPaga = total / cantidadPersonas` | `"Cada uno paga: $[cadaUnoPaga]"` |
+
+### Ejemplo
+
+Entrada: `cuenta = 120000`, `porcentajePropina = 10`, `cantidadPersonas = 4` → Salida: `Propina: $12000`, `Total a pagar: $132000`, `Cada uno paga: $33000`.
+
