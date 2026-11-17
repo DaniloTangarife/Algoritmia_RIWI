@@ -44,3 +44,53 @@ Aprobados: 4
 Nota más alta: 4.9, y más baja: 2.8
 ¿Refuerzo? Sí, hay estudiantes en refuerzo
 ```
+
+## Reto de Video 3 · Pirámide de asteriscos (Ciclos anidados)
+
+### Archivo creado
+`semana3/video/03_piramide.js`
+
+### Tabla de Traza (Altura = 4)
+
+| Fila | Espacios (n - fila) | Asteriscos (2 * fila - 1) | Salida Visual |
+| :---: | :---: | :---: | :--- |
+| **1** | 3 | 1 | `   *` |
+| **2** | 2 | 3 | `  ***` |
+| **3** | 1 | 5 | ` *****` |
+| **4** | 0 | 7 | `*******` |
+
+*(Nota: El caso borde de la última fila arroja 0 espacios, lo cual es correcto y no genera errores).*
+
+### Pruebas de Escritorio
+
+**Caso 1 (Altura = 1):**
+- Fila 1: Espacios = `1 - 1 = 0`. Asteriscos = `(2*1) - 1 = 1`.
+- Resultado:
+```text
+  *
+```
+**Caso 2 (Altura = 6):**
+
+```text
+- Fila 1: Espacios = 5, Asteriscos = 1.
+
+- Fila 2: Espacios = 4, Asteriscos = 3.
+
+- Fila 3: Espacios = 3, Asteriscos = 5.
+
+- Fila 4: Espacios = 2, Asteriscos = 7.
+
+- Fila 5: Espacios = 1, Asteriscos = 9.
+
+- Fila 6: Espacios = 0, Asteriscos = 11.
+
+Resultado:
+
+```text
+     *
+    ***
+   *****
+  *******
+ *********
+***********
+```
