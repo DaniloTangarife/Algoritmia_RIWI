@@ -15,7 +15,6 @@
 
 ### Resultado en Consola
 
-```text
 Carros atendidos: 3
 Total recaudado: $14000
 
@@ -37,7 +36,6 @@ Total recaudado: $14000
 
 ### Resultado en Consola
 
-```text
 Promedio: 3.68
 Aprobados: 4
 Nota más alta: 4.9, y más baja: 2.8
