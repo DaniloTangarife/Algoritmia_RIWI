@@ -93,3 +93,31 @@ Resultado:
  *********
 ***********
 ```
+
+## Reto de Video 4 · Factura Restaurante (SubProcesos)
+
+### Archivo creado
+`semana3/video/04_factura_restaurante.js`
+
+### Descomposición del problema (SubProcesos)
+- **LeerPedido()**: Acumula el subtotal multiplicando el precio por la cantidad de cada plato hasta que se ingrese un 0.
+- **CalcularPorcentaje(base, porcentaje)**: Calcula el impuesto (8%) y la propina (10%).
+- **ImprimirFactura()**: Suma todo y muestra el desglose en pantalla.
+
+### Tabla de Traza (Prueba con 25000 x 2, 12000 x 1, 0)
+
+| Vuelta | Acción | Valor leído | Subtotal acumulado |
+| :--- | :--- | :--- | :--- |
+| **1** | Ingresa precio 25000, cantidad 2 | 25000 | 50000 |
+| **2** | Ingresa precio 12000, cantidad 1 | 12000 | 62000 |
+| **3** | Ingresa precio 0 | 0 | 62000 (Sale del ciclo) |
+
+### Resultado en Consola
+
+```text
+--- FACTURA ---
+Subtotal:  $62000
+Impuesto (8%):  $4960
+Propina (10%):  $6200
+Total:     $73160
+```
