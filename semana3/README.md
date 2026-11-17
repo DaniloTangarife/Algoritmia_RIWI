@@ -121,3 +121,16 @@ Impuesto (8%):  $4960
 Propina (10%):  $6200
 Total:     $73160
 ```
+
+## Reto de Video 5 · Árbol de Componentes
+
+### Descripción
+Se realizó el análisis de una página web real (Eneba Latam) aplicando los conceptos de descomposición, abstracción y reconocimiento de patrones.
+
+### Archivos creados
+- `semana3/video/arbol_componentes_eneba.md`: contiene el diagrama gráfico (Mermaid) del árbol de cajas y la explicación detallada.
+
+### Resumen del análisis
+- **Descomposición:** Se dividió la página en sus bloques lógicos principales (Navegación, Banner, Secciones de Juegos, Footer).
+- **Abstracción:** Se ignoraron los detalles visuales (colores, imágenes específicas) para enfocarse en la estructura de los componentes.
+- **Patrón (Ciclo):** Se identificó que la cuadrícula de juegos repite el mismo componente visual (la Tarjeta de Juego) "N" cantidad de veces, lo cual se representa en programación mediante un ciclo (como `for` o `map`).
