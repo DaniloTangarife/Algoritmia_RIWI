@@ -71,7 +71,6 @@ Nota más alta: 4.9, y más baja: 2.8
 ```
 **Caso 2 (Altura = 6):**
 
-```text
 - Fila 1: Espacios = 5, Asteriscos = 1.
 
 - Fila 2: Espacios = 4, Asteriscos = 3.
